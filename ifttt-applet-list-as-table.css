@@ -3,6 +3,7 @@
 @description    Turn IFTTT's card-based list of applets into a more peaceful table
 @match          https://ifttt.com/*
 @downloadURL    https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/ifttt-applet-list-as-table.css
+@updateURL      https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/ifttt-applet-list-as-table.css
 @version        1.0.0
 ==/UserStyle== */
 
