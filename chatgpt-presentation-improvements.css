@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name        ChatGPT presentation improvements
+@description Widen sidebar
+@match       https://chat.openai.com/chat*
+==/UserStyle== */
+
+
+/* Widen the left sidebar above a viewport width of 768px */
+/* ------------------------------------------------------ */
+
+:root {
+    --sidebar-width-for-expanded-desktop: 20%;
+    --sidebar-original-desktop-width: 260px;
+}
+
+@media (min-width: 768px) {
+    #__next > * > .hidden {
+        width: var(--sidebar-width-for-expanded-desktop);
+        min-width: var(--sidebar-original-desktop-width);
+    }
+}
