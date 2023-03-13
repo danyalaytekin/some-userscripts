@@ -4,7 +4,10 @@ This repo will assemble some simple UserScripts written for Safari, in particula
 
 ## Notes for myself
 
-- UserScripts checks for the same kind of front-matter at `@updateURL` as is present in a script, so this URL might as well be the same as `@downloadURL`, unless the script becomes very large
+- The UserScripts app:
+    - checks for the same kind of front-matter at `@updateURL` as is present in a script, so this URL might as well be the same as `@downloadURL`, unless the script becomes very large
+    - doesn't pick up JS scripts with front matter written as `/* {front matter} */` instead of `// front matter`; I don't know whether this is a general rule affecting all clients
+        - it's fine with CSS files doing this
 
 ### How to... CSS → JS
 
@@ -24,19 +27,17 @@ body {
 #### `some-userscript.js`
 
 ```js
-/* ==UserScript==
-@name           Some UserScript
-@grant          GM.addStyle
-...
-==/UserScript== */
+// ==UserScript==
+// @name           Some UserScript
+// @grant          GM.addStyle
+// ...
+// ==/UserScript==
 
-(function() {
-    GM.addStyle(`
-        body {
-            display: none;
-        }
-    `)
-}) ();
+GM.addStyle(`
+    body {
+        display: none;
+    }
+`)
 ```
 
 ## Related
