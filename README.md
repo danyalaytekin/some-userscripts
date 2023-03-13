@@ -6,6 +6,39 @@ This repo will assemble some simple UserScripts written for Safari, in particula
 
 - UserScripts checks for the same kind of front-matter at `@updateURL` as is present in a script, so this URL might as well be the same as `@downloadURL`, unless the script becomes very large
 
+### How to... CSS → JS
+
+#### `some-filename.css`
+
+```css
+/* ==UserStyle==
+@name           Some UserStyle
+...
+==/UserStyle== */
+
+body {
+    display: none;
+}
+```
+
+#### `some-userscript.js`
+
+```js
+/* ==UserScript==
+@name           Some UserScript
+@grant          GM.addStyle
+...
+==/UserScript== */
+
+(function() {
+    GM.addStyle(`
+        body {
+            display: none;
+        }
+    `)
+}) ();
+```
+
 ## Related
 
 - [GreasyFork](https://greasyfork.org/en/scripts), a library of UserScripts
