@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name        IFTTT applet list as table
+@description Turn IFTTT's card-based list of applets into a more peaceful table
+@match       https://ifttt.com/*
+==/UserStyle== */
+
+.my-web-applet-card {
+    width: 100%;
+    font-size: 0.7rem;
+}
+
+.my-web-applet-card .content {
+    min-height: auto;
+    width: 80%;
+    padding: 1.2em;
+}
+
+.my-web-applet-card .title {
+    margin-bottom: 0;
+}
+
+.my-web-applet-card .meta {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.my-web-applet-card .by-and-author-link {
+    display: none !important;
+}
+
+.my-web-applet-card [class*="small_connect_button"] {
+    display: none !important;
+}
