@@ -4,7 +4,7 @@
 // @match          https://chat.openai.com/chat*
 // @downloadURL    https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/chatgpt-with-sorted-conversation-list.js
 // @updateURL      https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/chatgpt-with-sorted-conversation-list.js
-// @version        1.0.0
+// @version        1.0.1
 // @grant          GM.addStyle
 // ==/UserScript==
 
@@ -37,20 +37,20 @@ const selectorsOfShame = {
     listOfConversations: 'nav > div > .flex.flex-col'
 };
 
-function saySomethingIsHappening() {
-    querySelectorWithCaution('body').insertAdjacentHTML('beforeend', '<div class="spinner"></div>');
-}
-
-function sayWeAreDone() {
-    querySelectorWithCaution('.spinner').remove();
-}
-
 function querySelectorWithCaution(selector) {
     const itemsFound = document.querySelectorAll(selector);
     if(itemsFound.length > 1) {
         throw Error(`Expected one or zero items for selector "${ selector }" - the ChatGPT website must have changed - goodbye`);
     }
     return itemsFound.length === 1 ? itemsFound[0] : null;
+}
+
+function saySomethingIsHappening() {
+    document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="spinner"></div>');
+}
+
+function sayWeAreDone() {
+    querySelectorWithCaution('.spinner').remove();
 }
 
 function huntShowMoreButton() {
