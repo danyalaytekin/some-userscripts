@@ -1,7 +1,9 @@
 /* ==UserStyle==
-@name        ChatGPT with wider sidebar
-@description Widen sidebar
-@match       https://chat.openai.com/chat*
+@name           ChatGPT with wider sidebar
+@description    Widen sidebar
+@match          https://chat.openai.com/chat*
+@downloadURL    https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/chatgpt-with-wider-sidebar.css
+@version        1.0.0
 ==/UserStyle== */
 
 
