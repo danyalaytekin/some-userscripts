@@ -8,7 +8,7 @@ This repo will assemble some simple UserScripts written for Safari, in particula
 
 ### How to... CSS → JS
 
-#### `some-filename.css`
+#### `some-userstyle.css`
 
 ```css
 /* ==UserStyle==
