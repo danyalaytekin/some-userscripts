@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name           ChatGPT with sorted conversations in sidebar
+// @name           ChatGPT with sorted conversation list
 // @description    Sort, load, sort, load, until done
 // @match          https://chat.openai.com/chat*
 // @downloadURL    https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/chatgpt-with-sorted-conversation-list.js
 // @updateURL      https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/chatgpt-with-sorted-conversation-list.js
-// @version        1.0.1
+// @version        1.0.2
 // @grant          GM.addStyle
 // ==/UserScript==
 

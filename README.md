@@ -43,6 +43,5 @@ GM.addStyle(`
 ## Related
 
 - [GreasyFork](https://greasyfork.org/en/scripts), a library of UserScripts
-- VS Code dev extension, [andywang.vscode-scriptmonkey](https://marketplace.visualstudio.com/items?itemName=andywang.vscode-scriptmonkey)
 - Other people's scripts
     - [Mottie](https://github.com/Mottie/GitHub-userscripts)'s for GitHub
