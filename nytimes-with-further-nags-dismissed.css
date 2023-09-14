@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name           NYTimes with further nags dismissed
 @description    Hide the nag to upgrade experienced by users who are already subscribers.  This nag otherwise appears on every page load.
-@match          https://nytimes.com/*
+@match          https://www.nytimes.com/*
 @downloadURL    https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/nytimes-with-further-nags-dismissed.css
 @updateURL      https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/nytimes-with-further-nags-dismissed.css
-@version        1.0.0
+@version        1.0.1
 ==/UserStyle== */
 
 .expanded-dock {
