@@ -4,35 +4,35 @@
 @match          https://ifttt.com/*
 @downloadURL    https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/ifttt-applet-list-as-table.css
 @updateURL      https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/ifttt-applet-list-as-table.css
-@version        1.0.1
+@version        1.1.0
 ==/UserStyle== */
 
 .my-web-applet-card {
     width: 100%;
     font-size: 0.7rem;
-}
 
-.my-web-applet-card .content {
-    min-height: auto;
-    width: 80%;
-    padding: 1.2em;
-}
+    .content {
+        min-height: auto;
+        width: 80%;
+        padding: 1.2em;
+    }
 
-.my-web-applet-card .title {
-    margin-bottom: 0;
-}
+    .title {
+        margin-bottom: 0;
+    }
 
-.my-web-applet-card .meta {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+    .meta {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;    
+    }
 
-.my-web-applet-card .by-and-author-link {
-    display: none !important;
-}
+    .by-and-author-link {
+        display: none !important;
+    }
 
-.my-web-applet-card [class*="small_connect_button"] {
-    display: none !important;
+    [class*="small_connect_button"] {
+        display: none !important;
+    }    
 }
