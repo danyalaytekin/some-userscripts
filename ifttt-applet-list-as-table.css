@@ -4,7 +4,7 @@
 @match          https://ifttt.com/*
 @downloadURL    https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/ifttt-applet-list-as-table.css
 @updateURL      https://raw.githubusercontent.com/danyalaytekin/some-userscripts/main/ifttt-applet-list-as-table.css
-@version        1.1.0
+@version        1.2.0
 ==/UserStyle== */
 
 .my-web-applet-card {
@@ -28,11 +28,12 @@
         right: 0;    
     }
 
-    .by-and-author-link {
+    .by-and-author-link,
+    .owner {
         display: none !important;
     }
 
     [class*="small_connect_button"] {
         display: none !important;
-    }    
+    }
 }
